@@ -7,11 +7,13 @@ describe('<NewWidget />', () => {
     render(<NewWidget />)
 
     const notification = screen.getByText(/notificações/i)
+    const recents = screen.getByText(/recentes/i)
     const button = screen.getByRole('button', {
       name: /marcar todas como vistas/i,
     })
 
     expect(notification).toBeInTheDocument()
+    expect(recents).toBeInTheDocument()
     expect(button).toBeInTheDocument()
   })
 
@@ -26,6 +28,17 @@ describe('<NewWidget />', () => {
       userEvent.click(checkButton)
       userEvent.click(xButton)
       userEvent.click(check)
+    })
+  })
+
+  it('should test styles in component', () => {
+    render(<NewWidget />)
+
+    const paragraph = screen.getByTestId('p')
+
+    expect(paragraph).toHaveStyle({
+      'font-size': 'text-sm',
+      color: 'text-zinc-900',
     })
   })
 })
