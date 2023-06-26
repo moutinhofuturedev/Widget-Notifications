@@ -12,6 +12,7 @@ const config = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: ['/node_modules', '/.next/'],
   collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.ts(x)', '!**/layout.tsx'],
 
   testEnvironment: 'jest-environment-jsdom',
 }
