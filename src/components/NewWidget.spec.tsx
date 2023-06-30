@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { NewWidget } from './NewWidget'
+import NewWidget from './NewWidget'
 
 describe('<NewWidget />', () => {
   it('should render by default on the page', () => {

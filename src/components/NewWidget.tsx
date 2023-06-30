@@ -1,6 +1,6 @@
 import { Rocket, X, Check, Info } from 'lucide-react'
 
-export const NewWidget = () => {
+const NewWidget = () => {
   return (
     <div className="w-[448px]">
       {/* Header */}
@@ -76,3 +76,5 @@ export const NewWidget = () => {
     </div>
   )
 }
+
+export default NewWidget

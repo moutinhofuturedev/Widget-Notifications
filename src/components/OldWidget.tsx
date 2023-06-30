@@ -1,6 +1,6 @@
 import { Trash, KeyRound, PartyPopper } from 'lucide-react'
 
-export const OldWidget = () => {
+const OldWidget = () => {
   return (
     // Old Section
     <div className="w-[448px] rounded overflow-hidden">
@@ -56,3 +56,5 @@ export const OldWidget = () => {
     </div>
   )
 }
+
+export default OldWidget

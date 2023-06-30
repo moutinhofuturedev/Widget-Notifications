@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react'
-import { OldWidget } from './OldWidget'
+import OldWidget from './OldWidget'
 import userEvent from '@testing-library/user-event'
 
 describe('<OldWidget />', () => {

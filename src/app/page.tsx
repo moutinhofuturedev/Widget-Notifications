@@ -1,5 +1,5 @@
-import { NewWidget } from '@/components/NewWidget'
-import { OldWidget } from '@/components/OldWidget'
+import NewWidget from '@/components/NewWidget'
+import OldWidget from '@/components/OldWidget'
 
 export default function Home() {
   return (
